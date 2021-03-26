@@ -13,8 +13,9 @@
 const mongodb = require("mongodb").MongoClient;
 const csvtojson = require("csvtojson");
 
+const url = process.env.URL
 
-let url = "mongodb+srv://saurav:1234@cluster0.y5t73.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+
 
 csvtojson()
   .fromFile("data-sheet.csv")
