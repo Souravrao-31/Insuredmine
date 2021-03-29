@@ -9,9 +9,11 @@
 //        console.log(results);
 //    });
 
-
+const express = require('express');
+const app = express();
 const mongodb = require("mongodb").MongoClient;
 const csvtojson = require("csvtojson");
+const dotenv = require("dotenv").config();
 
 const url = process.env.URL
 
@@ -40,3 +42,12 @@ csvtojson()
       }
     );
   });
+
+
+  //Seaching
+  // app.get("/search/: producer",function(req, res){
+  //    var query = new RegExp("req.params.name", 'i'):
+  //    User.find({producer: query}).then((result) =>{
+  //      res.status(200).json(result)
+  //    })
+  // })
