@@ -1,5 +1,5 @@
 # Insuredmine
 Assessment 
 
-![](image/rd-1.png)
-![](image/rd-2.png)
+![](images/rd-1.png)
+![](images/rd-2.png)
